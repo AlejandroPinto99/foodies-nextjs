@@ -1,5 +1,6 @@
 import Slide from 'react-reveal'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import {AiOutlineArrowRight} from 'react-icons/ai'
 
@@ -18,8 +19,8 @@ const QuienesSomos = () => {
                 <div className="md:mr-5 relative z-20 md:mb-52 xl:flex xl:flex-col xl:align-baseline">
                     <div className=" md:mb-20">
                         <Slide right >
-                            <h2 className="font-syne-bold mb-8">¿Quién es Foodie?</h2>
-                            <p className="text-sm md:text-lg text-gray-500 ">
+                            <h2 className="font-syne-bold mb-8 2xl:text-5xl">¿Quién es Foodie?</h2>
+                            <p className="text-sm md:text-lg text-gray-500 2xl:text-3xl">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat id sit reiciendis, 
                                 vitae adipisci a laboriosam illo blanditiis distinctio, quibusdam architecto quis ?
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat id sit reiciendis, 
@@ -27,8 +28,8 @@ const QuienesSomos = () => {
                             </p>
                         </Slide>
                     </div>
-                    
-                    <div className="flex flex-row justify-start items-center font-syne-bold mt-12 md:mt-12 ">
+                
+                    <div className="flex flex-row justify-start items-center font-syne-bold mt-12 md:mt-12 2xl:text-5xl"> 
                         <h3>Contáctanos</h3>
                         <AiOutlineArrowRight className="w-10 "/>
                     </div>

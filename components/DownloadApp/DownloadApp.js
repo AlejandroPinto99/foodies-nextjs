@@ -35,7 +35,7 @@ const DownloadApp = () => {
                             </div>
                             <div className="md:flex md:flex-col justify-center items-center">
                                 <Slide down >
-                                    <div className="md:flex md:flex-row justify-center items-center">
+                                    <div className="md:flex md:flex-row justify-center items-center xl:text-xl">
                                         <Step 
                                             step="01"
                                             tittle="Solicita rápido"
@@ -50,7 +50,7 @@ const DownloadApp = () => {
                                             Quam nesciunt ratione reprehenderit natus corrupti at"
                                         />
                                     </div>
-                                    <div className="md:w-6/12 lg:text-center">
+                                    <div className="md:w-6/12 lg:text-center  xl:text-xl">
                                         <Step 
                                             step="03"
                                             tittle="Promociones especiales"
