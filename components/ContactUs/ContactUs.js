@@ -61,16 +61,16 @@ const ContactUs = () => {
 
                         <div className="lg:flex lg:flex-row lg:justify-center lg:w-full"> 
                             <div className="lg:w-6/12 lg:ml-32">
-                                <label className="flex flex-col ml-5 text-xs"> <p className="lg:ml-16">Nombre y Apellido</p>
+                                <label className="flex flex-col ml-5 text-xs xl:text-lg"> <p className="lg:ml-16">Nombre y Apellido</p>
                                     <input className="mr-5 mt-1 mb-2 py-3 pl-3 bg-transparent border border-gray-400 rounded-sm lg:mx-16 lg:py-4
-                                    xl:w-8/12 xl:text-lg"
+                                    xl:w-8/12 "
                                         id="name"
                                         value={name}
                                         maxLength="191"
                                         onChange={(e) => setName(e.target.value)}/>
                                 </label>
 
-                                <label className="flex flex-col ml-5 text-xs"> <p className="lg:ml-16">Correo electrónico</p>
+                                <label className="flex flex-col ml-5 text-xs xl:text-lg"> <p className="lg:ml-16">Correo electrónico</p>
                                     <input className="mr-5 mt-1 mb-2 py-3 pl-4 bg-transparent border border-gray-400 rounded-sm lg:mx-16 lg:py-4 
                                     xl:w-8/12 xl:text-lg"
                                         placeholder="j.doe@correo.com"
@@ -81,9 +81,9 @@ const ContactUs = () => {
                             </div>
 
                             <div className="lg:w-6/12 lg:mr-32">    
-                                <label className="flex flex-col ml-5 -mt-1 text-xs"> Mensaje
+                                <label className="flex flex-col text-xs xl:text-lg xl:-ml-20"> Mensaje
                                     <textarea className="mr-5 mb-2 pl-4 pt-2 pr-2 h-28 bg-transparent border border-gray-400 rounded-sm
-                                    xl:h-40 xl:text-lg xl:-ml-20"
+                                    xl:h-40 xl:text-lg"
                                         placeholder="El dia de ahora mi experiencia fue..."
                                         id="message"
                                         value={message}
