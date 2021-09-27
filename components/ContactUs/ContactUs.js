@@ -44,12 +44,12 @@ const ContactUs = () => {
     }
 
     return(
-        <div id="contact" className="text-white bg-black py-48  lg:py-24"> 
+        <div id="contact" className="text-white bg-black py-48  lg:pt-24"> 
             {
                 !sended ? (
                 <div className="md:mx-10">
                     <h3 className="pt-12 pb-5 text-4xl font-druk-bold text-center">Cuentanos tu experiencia</h3>
-                    <p className="pb-10 px-10 leading-5 text-gray-200 text-center">Dont miss out our great offers & receive deals from all our top
+                    <p className="pb-10 px-10 leading-5 text-gray-200 text-center xl:text-2xl">Dont miss out our great offers & receive deals from all our top
                     restaurant via e-mail
                     </p>
 
@@ -62,7 +62,8 @@ const ContactUs = () => {
                         <div className="lg:flex lg:flex-row lg:justify-center lg:w-full"> 
                             <div className="lg:w-6/12 lg:ml-32">
                                 <label className="flex flex-col ml-5 text-xs"> <p className="lg:ml-16">Nombre y Apellido</p>
-                                    <input className="mr-5 mt-1 mb-2 py-3 pl-3 bg-transparent border border-gray-400 rounded-sm lg:mx-16 lg:py-4"
+                                    <input className="mr-5 mt-1 mb-2 py-3 pl-3 bg-transparent border border-gray-400 rounded-sm lg:mx-16 lg:py-4
+                                    xl:w-8/12 xl:text-lg"
                                         id="name"
                                         value={name}
                                         maxLength="191"
@@ -70,7 +71,8 @@ const ContactUs = () => {
                                 </label>
 
                                 <label className="flex flex-col ml-5 text-xs"> <p className="lg:ml-16">Correo electrónico</p>
-                                    <input className="mr-5 mt-1 mb-2 py-3 pl-4 bg-transparent border border-gray-400 rounded-sm lg:mx-16 lg:py-4"
+                                    <input className="mr-5 mt-1 mb-2 py-3 pl-4 bg-transparent border border-gray-400 rounded-sm lg:mx-16 lg:py-4 
+                                    xl:w-8/12 xl:text-lg"
                                         placeholder="j.doe@correo.com"
                                         id="email"
                                         value={email}
@@ -79,8 +81,9 @@ const ContactUs = () => {
                             </div>
 
                             <div className="lg:w-6/12 lg:mr-32">    
-                                <label className="flex flex-col ml-5 text-xs"> Mensaje
-                                    <textarea className="mr-5 mt-1 mb-5 pl-4 pt-4 pr-2 h-28 bg-transparent border border-gray-400 rounded-sm"
+                                <label className="flex flex-col ml-5 -mt-1 text-xs"> Mensaje
+                                    <textarea className="mr-5 mb-2 pl-4 pt-2 pr-2 h-28 bg-transparent border border-gray-400 rounded-sm
+                                    xl:h-40 xl:text-lg xl:-ml-20"
                                         placeholder="El dia de ahora mi experiencia fue..."
                                         id="message"
                                         value={message}
@@ -88,9 +91,9 @@ const ContactUs = () => {
                                         maxLength="255"/>
                                 </label>
 
-                                <div className="flex flex-col items-center my-5 mb-36 lg:items-end lg:mr-5">
+                                <div className="flex flex-col items-center my-5 lg:items-end lg:mr-5">
                                     <button className="w-7/12 py-3 px-3 font-bold text-black bg-yellow-400 rounded-md md:w-3/12
-                                    lg:w-5/12 hover:bg-yellow-200"
+                                    hover:bg-yellow-200 xl:w-48"
                                         type="submit">
                                             Enviar comentarios
                                     </button>
@@ -109,7 +112,7 @@ const ContactUs = () => {
                         <p className="font-druk-bold text-3xl text-center mb-5">Gracias por tus comentarios</p>
                         <p className="mb-8"> Dont miss out our great offers & receive deals from all our top
                         restaurant via e-mail</p>
-                        <button className="bg-yellow-400 p-3 rounded-md text-lg font-bold text-black">
+                        <button className="bg-yellow-400 p-3 rounded-sm text-lg font-bold text-black">
                                 <Link href="/menu"> Conoce nuestro menu </Link>
                             </button>
                     </div> 
