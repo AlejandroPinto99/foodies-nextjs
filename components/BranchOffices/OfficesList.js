@@ -44,8 +44,8 @@ const OfficeList = ({offices, found}) => {
             </div>
 
             <div className="hidden mt-10 md:relative md:flex md:w-full 
-            lg:flex lg:w-5/12 lg:ml-10 lg:absolute lg:right-0 lg:mr-0 xl:w-6/12 xl:ml-5 lg:mb-52" 
-            style={{height: "70vh", width:"48%"}}>
+            lg:flex lg:w-5/12 lg:ml-10 lg:absolute lg:right-0 lg:mr-0 xl:w-6/12 xl:ml-5 lg:mb-48 xl:mb-52" 
+            style={{height: "50vh", width:"48%"}}>
                 <Map element={element}/>
             </div>
         </div>
