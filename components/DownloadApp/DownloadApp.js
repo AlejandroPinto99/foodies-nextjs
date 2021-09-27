@@ -12,7 +12,7 @@ const DownloadApp = () => {
         <div className="relative mt-64 bg-white lg:mt-10 z-0"> 
 
             <div>
-                <div className="hidden md:flex md:absolute md:right-24 md:top-56 lg:right-8 lg:top-48 xl:right-20 xl:top-1/4">
+                <div className="hidden md:flex md:absolute md:right-24 md:top-56 lg:right-8 lg:top-48 xl:right-28 xl:top-1/4">
                     <Image src={line} alt="line" />
                 </div>
                 <div className="hidden md:flex md:absolute md:left-28 md:top-56 lg:left-200 lg:top-48 xl:left-450 xl:top-1/4">
