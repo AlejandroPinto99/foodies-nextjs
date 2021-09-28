@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import NavBar from  '../Navigation/NavBar'
-import BgImage from './BgImage'
+import Subtract from '../../assets/images/Subtract.svg'
 
 import rectangle from '../../assets/images/bg_text.svg'
 import {AiOutlineArrowRight} from 'react-icons/ai'
@@ -12,38 +12,50 @@ import hamburger from '../../assets/images/hero_hamburger.svg'
 
 const Home = () => {
     return(
-        <div className="md:mb-96">
-            <div className="absolute right-0 z-0">
-                <BgImage />
+        <div className="md:mb-32 xl:mb-72">
+
+            <div className="  md:hidden absolute right-0 z-0">
+                <Image src={Subtract} alt="BgImage" width={330} height={420}/>
+            </div>
+
+            <div className="hidden md:flex xl:hidden absolute right-0 z-0">
+                <Image src={Subtract} alt="BgImage" width={450} height={650}/>
+            </div>
+
+            <div className="hidden xl:flex absolute right-0 z-0">
+                <Image src={Subtract} alt="BgImage" width={800} height={900}/>
             </div>
             <div className="lg:ml-10 relative z-20">   
 
                 <header className="flex flex-row justify-between items-center">
-                    <h1 className="ml-4 font-druk-bold text-3xl w-3/12 2xl:text-6xl mt-5">Foodies</h1>
-                    <NavBar className="mr-4"/> 
+                    <h1 className="ml-10 font-druk-bold text-3xl w-2/12 mt-10">Foodies</h1>
+                    <NavBar/> 
                 </header>
 
-                <div className="md:flex flex-row-reverse">
-                    <div className="flex justify-center sm:justify-end items-center md:w-6/12"> 
-                        <div className="h-24 mb-40">
-                            <Image src={hamburger} alt="hamburger" width={1100} height={500}/>
+                <div className="sm:flex flex-row-reverse justify-end">
+                    <div className="flex flex-row justify-center sm:justify-start"> 
+                        <div className="absolute top-24 md:top-40 md:right-5 xl:hidden">
+                            <Image src={hamburger} alt="hamburger" width={312.93} height={246}/>
+                        </div>
+
+                        <div className="hidden absolute top-48 right-20 xl:flex">
+                            <Image src={hamburger} alt="hamburger" width={567} height={446}/>
                         </div>
                     </div>
-                    <div className="mt-10 md:w-6/12">
-                        <div className="mb-5">
-                        <Slide left >
-                            <h2 className="font-druk-bold relative z-10 text-4xl leading-8 px-3 mx-3 pt-8 
-                            md:text-5xl 2xl:text-7xl">
-                                Un nuevo sabor esta en la ciudad
-                            </h2>
-                        </Slide>
-                            <div className="absolute -mt-20 -ml-5  z-0 w-80 md:w-100 
-                            xl:w-400 xl:h-10 xl:-mt-10 xl:top-52 ">
-                                <Image src={rectangle} alt="rectangle" width={500} height={70}/>
-                            </div>   
-                        </div>
+                    <div className=" mt-72 sm:mt-36 md:mt-24 sm:w-6/12 md:w-6/12 lg:w-5/12">
+                        <div className="h-auto">
+                            <Slide left >
+                                <h2 className="font-druk-bold relative z-10 text-3xl leading-7 ml-5 pt-8 
+                                md:text-4xl  xl:text-6xl 2xl:text-7xl">
+                                    Un nuevo sabor esta en la ciudad
+                                </h2>
+                            </Slide>
+                                <div className="relative bottom-10 ml-2 xl:bottom-14 xl:ml-5">
+                                    <Image src={rectangle} alt="rectangle"/>
+                                </div>   
+                            </div>
                         
-                        <p className="font-body font-normal text-m leading-6 px-3 mx-3 mt-3 text-gray-400 2xl:text-3xl">
+                        <p className="relative bottom-10 font-body font-normal text-m leading-6 px-3 mx-3 text-gray-400 2xl:text-3xl">
                             Estamos a punto de descubrir un mundo lleno de sabores y de emociones inigualables     
                         </p>
                     </div>
