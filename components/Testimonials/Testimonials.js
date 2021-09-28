@@ -81,51 +81,51 @@ const Testimonials = () => {
             </div>
             <Carousel>
                 <Slide right>
-                    <div>
+                    <div className="flex flex-col items-center">
                         <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-52 md:mb-8  xl:text-4xl">
                             {testimonials[0].tittle}
                         </p>
-                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl">
+                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl w-6/12 ">
                             {testimonials[0].testimony}
                         </p>
                     </div>
                 </Slide>
                 <Slide right>
-                    <div>
+                    <div className="flex flex-col items-center">
                         <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-+++52 md:mb-8  xl:text-4xl ">
                             {testimonials[1].tittle}
                         </p>
-                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl">
+                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl w-6/12 flex flex-row justify-center">
                             {testimonials[1].testimony}
                         </p>
                     </div>
                 </Slide>
                 <Slide right>
-                    <div>
+                    <div className="flex flex-col items-center"> 
                         <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-+++52 md:mb-8  xl:text-4xl">
                             {testimonials[2].tittle}
                         </p>
-                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl">
+                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl w-6/12 flex flex-row justify-center">
                             {testimonials[2].testimony}
                         </p>
                     </div>
                 </Slide>
                 <Slide right>
-                    <div>
+                    <div className="flex flex-col items-center">
                         <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-+++52 md:mb-8  xl:text-4xl ">
                             {testimonials[3].tittle}
                         </p>
-                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl">
+                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl w-6/12 flex flex-row justify-center">
                             {testimonials[3].testimony}
                         </p>
                     </div>
                 </Slide>
                 <Slide right>
-                    <div>
+                    <div className="flex flex-col items-center">
                         <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-+++52 md:mb-8  xl:text-4xl">
                             {testimonials[4].tittle}
                         </p>
-                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl">
+                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl w-6/12 flex flex-row justify-center">
                             {testimonials[4].testimony}
                         </p>
                     </div>
