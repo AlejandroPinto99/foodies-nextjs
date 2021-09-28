@@ -4,38 +4,38 @@ import Image from 'next/image'
 import Step from './Step'
 
 import phone from '../../assets/images/phone.svg'
-import line from '../../assets/images/line_app.svg'
-import line2 from '../../assets/images/line2_app.svg'
+import line2 from '../../assets/images/line_app.svg'
 
 const DownloadApp = () => {
     return(
-        <div className="relative mt-64 bg-white lg:mt-10 z-0"> 
+        <div className="relative mt-64 bg-white lg:mt-10 z-0 lg:mb-72"> 
 
             <div>
-                <div className="hidden md:flex md:absolute md:right-24 md:top-56 lg:right-8 lg:top-48 xl:right-28 xl:top-1/4">
-                    <Image src={line} alt="line" />
-                </div>
-                <div className="hidden md:flex md:absolute md:left-28 md:top-56 lg:left-200 lg:top-48 xl:left-450 xl:top-1/4">
-                    <Image src={line2} alt="line2"  />
-                </div>
-                
                 <div className="lg:flex lg:flex-col lg:items-end">
-                    <div className="lg:w-6/12">
-                            <div className="relative z-20 flex flex-col font-druk-bold text-3xl text-center mb-20 lg:mb-12">
+                    <div className="lg:w-8/12">
+                            <div className=" flex flex-col font-druk-bold text-3xl text-center mb-20 lg:mb-12">
                                 <Slide right >
-                                    <p className="relative z-20 mb-2">Obten más beneficios</p>
-                                    <p className="relative z-20">
-                                        Descarga nuestra App
-                                    </p>
+                                    <p className=" mb-2">Obten más beneficios</p>
+                                    <div className="relative z-10">
+                                        <p className="relative z-10">
+                                            Descarga nuestra App
+                                        </p>
+                                        <svg width="90% " height="80" viewBox="0 0 329 80" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            className="absolute z-0 top-0 mx-4 sm:-left-12 ">
+                                            <rect x="`0.560425" y="4.42261" width="150%" height="110%" transform="rotate(-0.641723 0.560425 4.42261)" fill="#FFD600"/>
+                                        </svg>
+                                    </div>
                                 </Slide>
-                                <svg width="100%" height="80" viewBox="0 0 329 80" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                className="absolute z-0 top-2/4 w-9/12 h-18 mx-10 md:w-9/12 lg:w-10/12">
-                                    <rect x="0.560425" y="4.42261" width="150%" height="110%" transform="rotate(-0.641723 0.560425 4.42261)" fill="#FFD600"/>
-                                </svg>
                             </div>
-                            <div className="md:flex md:flex-col justify-center items-center">
+                            <div className="md:flex md:flex-col justify-center items-center relative">
+                                <div className="hidden md:flex absolute z-0 md:top-16 md:right-32 lg:right-32 xl:top-12 xl:right-42 flip-horizontally">
+                                    <Image src={line2} alt="line" />
+                                </div>
+                                <div className="hidden md:flex absolute z-0 md:top-16 md:left-32 lg:left-32 xl:top-12 xl:left-42">
+                                    <Image src={line2} alt="line2"  />
+                                </div>
                                 <Slide down >
-                                    <div className="md:flex md:flex-row justify-center items-center xl:text-xl">
+                                    <div className="md:flex md:flex-row justify-center items-center xl:text-xl relative z-10">
                                         <Step 
                                             step="01"
                                             tittle="Solicita rápido"
@@ -50,7 +50,7 @@ const DownloadApp = () => {
                                             Quam nesciunt ratione reprehenderit natus corrupti at"
                                         />
                                     </div>
-                                    <div className="md:w-6/12 lg:text-center  xl:text-xl">
+                                    <div className="md:w-6/12 lg:text-center lg:absolute lg:top-64 xl:text-xl">
                                         <Step 
                                             step="03"
                                             tittle="Promociones especiales"

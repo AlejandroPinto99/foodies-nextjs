@@ -6,6 +6,8 @@ import apple from '../../assets/images/apple.png'
 import google from '../../assets/images/google.png'
 
 import line from '../../assets/icons/Line.svg'
+import lineM from '../../assets/icons/LineM.svg'
+import lineL from '../../assets/icons/LineL.svg'
 
 const Footer = () => {
     return(
@@ -22,10 +24,17 @@ const Footer = () => {
                     
                 </div>
             </div>
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex md:hidden flex-col justify-center items-center">
             <Image src={line} alt="line"
-                className="w-11/12"
-            />
+                className="w-10/12"/>
+            </div>
+            <div className="hidden md:flex xl:hidden flex-col justify-center items-center">
+            <Image src={lineM} alt="line"
+                className="w-11/12"/>
+            </div>
+            <div className=" hidden xl:flex flex-col justify-center items-center">
+            <Image src={lineL} alt="line"
+                className="w-11/12"/>
             </div>
             <Links />
         </div>
