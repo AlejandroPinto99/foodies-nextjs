@@ -3,7 +3,8 @@ import Image from 'next/image'
 const Plate = ({image, name, description, category, price}) => {
     return(
         <div>
-            <div className="mx-10 pb-5 flex flex-col mt-2 ">
+            <div className="mx-10 pb-5 flex flex-col mt-5 px-5 
+            hover:shadow-lg transform hover:scale-125 transition duration-300 cursor-pointer">
                 <p className="font-syne-bold text-2xl">{name}</p>
                 <p className="text-xs my-5">{description}</p>
                 <div className="flex flex-row justify-between">

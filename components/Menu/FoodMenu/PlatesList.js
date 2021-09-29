@@ -1,10 +1,11 @@
 import Plate from './Plate'
 import FoodNF from '../../../assets/images/FoodNotFound.svg'
+import Image from 'next/image'
 
 const PlatesList = ({plates}) => {
 
     return(
-        <div>
+        <div className="mb-10">
 
             <div className="md:grid  md:gap-4 md:grid-cols-2 lg:grid-cols-4">
                 {
@@ -31,7 +32,7 @@ const PlatesList = ({plates}) => {
                     plates.length === 0 ? 
                         (
                         <div className="flex flex-col items-center">
-                            <img src={FoodNF} alt="not found" className="h-48"/>
+                            <Image src={FoodNF} alt="not found" className="h-48"/>
                             <p className="font-syne-bold text-xl my-5">
                                 ¡Platillo no Encontrado!
                             </p>

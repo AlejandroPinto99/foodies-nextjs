@@ -11,7 +11,7 @@ import lineL from '../../assets/icons/LineL.svg'
 
 const Footer = () => {
     return(
-        <div className="pb-2">
+        <div>
             <div className="flex flex-col items-center justify-center md:flex-row md:justify-between md:mx-10">
                 <p className="font-druk-bold text-2xl text-gray-500 lg:ml-10"> Foodies </p>
                 <div className="flex flex-row justify-center my-3">
@@ -25,17 +25,17 @@ const Footer = () => {
                 </div>
             </div>
             <div className="flex md:hidden flex-col justify-center items-center">
-            <Image src={line} alt="line"
-                className="w-10/12"/>
+                <Image src={line} alt="line"
+                    className="w-10/12"/>
             </div>
             <div className="hidden md:flex xl:hidden flex-col justify-center items-center">
-            <Image src={lineM} alt="line"
-                className="w-11/12"/>
+                <Image src={lineM} alt="line"
+                    className="w-11/12"/>
             </div>
             <div className=" hidden xl:flex flex-col justify-center items-center">
-            <Image src={lineL} alt="line"
-                className="w-11/12"/>
-            </div>
+                <Image src={lineL} alt="line"
+                    className="w-11/12"/>
+                </div>
             <Links />
         </div>
     )

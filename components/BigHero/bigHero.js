@@ -6,11 +6,12 @@ import Image from 'next/image'
 const bigHero = () => {
     return(
         <div className="mt-10 xl:w-6/12">
-            <picture>
-                <source media="(max-width: 640px)" srcSet={SMimage} className="w-full"/>
-                <source media="(max-width: 1024px)" srcSet={MDimage} className="w-full"/>
-                <Image src={MDimage} alt="group22" width={1100} height={800}/>
-            </picture>
+            <div className="md:hidden">
+                <Image src={SMimage} alt="big hero"/>
+            </div>
+            <div className="hidden md:flex">
+                <Image src={MDimage} alt="big hero" width={1100} height={800}/>
+            </div>       
         </div>
     )
 }

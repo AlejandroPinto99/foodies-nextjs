@@ -3,19 +3,23 @@ import Image from 'next/image'
 
 import Step from './Step'
 
-import phone from '../../assets/images/phone.svg'
+import phone from '../../assets/images/phone.png'
 import line2 from '../../assets/images/line_app.svg'
 
 const DownloadApp = () => {
     return(
-        <div className="relative mt-64 bg-white lg:mt-10 z-0 lg:mb-72"> 
+        <div className="relative mt-48 mb-36 bg-white lg:mt-10 z-0 lg:mb-72"> 
 
+            <div className="absolute -top-96">
+                <Image src={phone} alt="phone"/>
+            </div>
+            
             <div>
                 <div className="lg:flex lg:flex-col lg:items-end">
                     <div className="lg:w-8/12">
                             <div className=" flex flex-col font-druk-bold text-3xl text-center mb-20 lg:mb-12">
                                 <Slide right >
-                                    <p className=" mb-2">Obten más beneficios</p>
+                                    <p className=" mb-2 mt-10 ">Obten más beneficios</p>
                                     <div className="relative z-10">
                                         <p className="relative z-10">
                                             Descarga nuestra App

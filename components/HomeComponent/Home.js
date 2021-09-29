@@ -14,7 +14,7 @@ const Home = () => {
     return(
         <div className="md:mb-32 xl:mb-72">
 
-            <div className="  md:hidden absolute right-0 z-0">
+            <div className="  md:hidden absolute right-0 z-0 -top-5">
                 <Image src={Subtract} alt="BgImage" width={330} height={420}/>
             </div>
 
@@ -28,7 +28,7 @@ const Home = () => {
             <div className="lg:ml-10 relative z-20">   
 
                 <header className="flex flex-row justify-between items-center">
-                    <h1 className="ml-10 font-druk-bold text-3xl w-2/12 mt-10">Foodies</h1>
+                    <h1 className="ml-4 mt-10 text-xl font-druk-bold w-2/12 xl:text-3xl xl:mt-10 xl:ml-10">Foodies</h1>
                     <NavBar/> 
                 </header>
 
@@ -51,18 +51,18 @@ const Home = () => {
                                 </h2>
                             </Slide>
                                 <div className="relative bottom-10 ml-2 xl:bottom-14 xl:ml-5">
-                                    <Image src={rectangle} alt="rectangle"/>
+                                    <Image src={rectangle} alt="rectangle" width={242.66} height={54}/>
                                 </div>   
                             </div>
                         
-                        <p className="relative bottom-10 font-body font-normal text-m leading-6 px-3 mx-3 text-gray-400 2xl:text-3xl">
+                        <p className="relative bottom-10 font-body font-normal text-sm leading-6 px-3 mx-3 mt-5 text-gray-400 2xl:text-3xl">
                             Estamos a punto de descubrir un mundo lleno de sabores y de emociones inigualables     
                         </p>
                     </div>
                 </div>
 
-                <div className="flex flex-row justify-start items-center mt-3 md:mt-10 ">
-                    <p className="mx-4 px-2 font-syne-bold text-lg md:text-2xl md:mr-1 2xl:text-4xl">Encuentranos</p>
+                <div className="flex flex-row justify-start items-center md:mt-10 ">
+                    <p className="ml-4 px-2 font-syne-bold text-lg md:text-2xl md:mr-1 2xl:text-4xl">Encuentranos</p>
                 <Link href="#restaurantes"><a><AiOutlineArrowRight className="md:text-2xl xl:text-4xl"/></a></Link>
                 </div>
             </div>

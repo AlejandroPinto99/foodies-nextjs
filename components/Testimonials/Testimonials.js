@@ -13,8 +13,8 @@ const Testimonials = () => {
     const CarouselUI = ({position, handleClick, children}) => (
         <div className="overflow-hidden relative">
             {children}
-        <div className="mt-64">
-            <div className=" text-center py-5 flex flex-row items-center justify-center z-20">
+        <div className="mt-52">
+            <div className="text-center py-5 flex flex-row items-center justify-center z-20">
                 <div onClick={handleClick} data-position={position - 1} className="z-10 ">
 
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 xl:h-16 xl:w-10 text-sm mx-2" fill="none" viewBox="0 0 24 24" 
@@ -44,29 +44,29 @@ const Testimonials = () => {
 
     const testimonials = [
         {
-            "tittle": "El mejor lugar para degustar en familia y amigos!",
+            "tittle": "\"El mejor lugar para degustar en familia y amigos!\"",
             "testimony": "Es el mejor lugar al que he venido con mi familia, la comida es rica, sirven rapido y te atienden de la mejor manera."
         }, 
         {
-            "tittle" : "Las hamburguesas mas ricas que he probado desde hace tiempo",
+            "tittle" : "\"Las hamburguesas mas ricas que he probado desde hace tiempo\"",
             "testimony": "Las hamburguesas son muy buenas, la carne es de sabrosa y de calidad, el pan es suave, y las variedades de queso son lo mejor"
         }, 
         {
-            "tittle" : "El servicio es rapidisimo!",
+            "tittle" : "\"El servicio es rapidisimo!\"",
             "testimony": "Pedimos la comida, y en menos de 10 minutos ya teniamos todos nuestras hamburguesas en la mesa"
         },
         {
-            "tittle" : "Limpieza impecable",
+            "tittle" : "\"Limpieza impecable\"",
             "testimony": "He visitado todos los establecimientos de Foodies, y en todos ellos la limpieza es milimetrica. La limpieza de las mesas es inmediata"
         },
         {
-            "tittle" : "Idea para pasar a comer algo rico y economico!",
+            "tittle" : "\"Idea para pasar a comer algo rico y economico!\"",
             "testimony": "El precio y la calidad de las hamburguesas van de la mano, es comida deliciosa, por un precio razonable"
         }
 ]
 
     return(
-        <div className=" relative xl:mt-72 md:mt-48 mt-24 mb-10">
+        <div className="relative xl:mt-72 md:mt-48 mb-10">
             <div className="relative hidden md:flex">
                 <div  className="absolute right-0 z-0">
                     <Image src={image} alt="red_back"/>
@@ -85,27 +85,30 @@ const Testimonials = () => {
                         <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-52 md:mb-8  xl:text-4xl">
                             {testimonials[0].tittle}
                         </p>
-                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl w-6/12 ">
+                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 
+                        xl:text-2xl xl:w-6/12 flex flex-row justify-center">
                             {testimonials[0].testimony}
                         </p>
                     </div>
                 </Slide>
                 <Slide right>
                     <div className="flex flex-col items-center">
-                        <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-+++52 md:mb-8  xl:text-4xl ">
+                        <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-52 md:mb-8  xl:text-4xl ">
                             {testimonials[1].tittle}
                         </p>
-                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl w-6/12 flex flex-row justify-center">
+                        <p className="text-gray-400 text-center px-2 leading-5 text-md  md:mx-20 md:mb-24 
+                        xl:w-6/12 xl:text-2xl flex flex-row justify-center">
                             {testimonials[1].testimony}
                         </p>
                     </div>
                 </Slide>
                 <Slide right>
                     <div className="flex flex-col items-center"> 
-                        <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-+++52 md:mb-8  xl:text-4xl">
+                        <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-52 md:mb-8  xl:text-4xl">
                             {testimonials[2].tittle}
                         </p>
-                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl w-6/12 flex flex-row justify-center">
+                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl 
+                        xl:w-6/12 flex flex-row justify-center">
                             {testimonials[2].testimony}
                         </p>
                     </div>
@@ -115,7 +118,8 @@ const Testimonials = () => {
                         <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-+++52 md:mb-8  xl:text-4xl ">
                             {testimonials[3].tittle}
                         </p>
-                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl w-6/12 flex flex-row justify-center">
+                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl 
+                        xl:w-6/12 flex flex-row justify-center">
                             {testimonials[3].testimony}
                         </p>
                     </div>
@@ -125,7 +129,8 @@ const Testimonials = () => {
                         <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-+++52 md:mb-8  xl:text-4xl">
                             {testimonials[4].tittle}
                         </p>
-                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl w-6/12 flex flex-row justify-center">
+                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl 
+                        xl:w-6/12 flex flex-row justify-center">
                             {testimonials[4].testimony}
                         </p>
                     </div>

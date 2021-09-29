@@ -123,9 +123,9 @@ const Search = () => {
                 </ul>
         </div>
 
-        <div className="flex flex-row justify-between px-4 py-6 md:flex-col">
-                <div className="lg:flex lg:flex-row lg:justify-center">
-                    <div className="flex flex-row-reverse items-center justify-end border border-gray-300 rounded-lg w-full md:w-6/12 ">
+        <div className="flex justify-between px-4 py-6 md:flex-col xl:flex-row xl:ml-10 ">
+                <div className="lg:flex lg:flex-row lg:justify-center xl:w-4/12 xl:justify-start xl:my-10">
+                    <div className="flex flex-row-reverse items-center justify-end border border-gray-300 rounded-lg w-full md:w-6/12 xl:w-full ">
                         <input placeholder="Busca tu platillo favorito..." className="relative py-3 pl-1 w-5/6 text-md"
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
@@ -134,16 +134,16 @@ const Search = () => {
                     </div> 
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 ml-3 p-1  md:hidden" viewBox="0 0 20 20" fill="currentColor"
-                onClick={() => setFilter(!filter)}
-                >
-                <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z" />
+                    onClick={() => setFilter(!filter)}
+                    >
+                    <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z" />
                 </svg> 
-                <div>
-                    <ul className="hidden md:flex flex-row justify-between mx-5 my-2 font-druk-bold text-sm lg:text-xl">
-                        <li className="mx-3" onClick={() => requestAll()}>Todos</li>
-                        <li className="mx-3" onClick={() => requestCategory(1)}>Las Tradicionales</li>
-                        <li className="mx-3" onClick={() => requestCategory(2)}>Recomendaciones</li>
-                        <li className="mx-3" onClick={() => requestCategory(3)}>Para compartir</li>
+                <div className="xl:w-8/12 xl:my-10">
+                    <ul className="hidden md:flex flex-row justify-between mx-5 my-2 font-druk-bold text-sm lg:text-xl xl:text-sm xl:justify-start">
+                        <li className="mx-5" onClick={() => requestAll()}>Todos</li>
+                        <li className="mx-5" onClick={() => requestCategory(1)}>Las Tradicionales</li>
+                        <li className="mx-5" onClick={() => requestCategory(2)}>Recomendaciones</li>
+                        <li className="mx-5" onClick={() => requestCategory(3)}>Para compartir</li>
                     </ul>
                 </div>
     
@@ -153,15 +153,19 @@ const Search = () => {
                 list ? ( <PlatesList plates={list}/>)    : null
             }
         </div> 
-        <div className="flex flex-row justify-center">
-            {pages}
+        <div className="xl:flex xl:flex-row xl:justify-center xl:items-center">
+            <div className="flex flex-row justify-center cursor-pointer">
+                {pages}
+            </div>
+            <div className="flex flex-row justify-center">
+                <button className="py-3 px-10 bg-yellow-400 rounded-lg font-semibold hover:bg-yellow-200 
+"
+                onClick={() => changePage(page + 1 > meta.last_page ? 1 : page + 1)}> 
+                Siguiente
+                </button> 
+            </div>
         </div>
-        <div className="flex flex-row justify-center">
-            <button className="py-3 px-10 bg-yellow-400 rounded-lg font-semibold hover:bg-yellow-200"
-            onClick={() => changePage(page + 1 > meta.last_page ? 1 : page + 1)}> 
-            Siguiente
-            </button> 
-        </div>
+        
     </div>    
     )
 }
