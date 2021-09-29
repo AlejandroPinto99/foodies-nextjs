@@ -4,19 +4,27 @@ import Image from 'next/image'
 import Step from './Step'
 
 import phone from '../../assets/images/phone.png'
+import phoneM from '../../assets/images/phoneM.png'
+import phoneL from '../../assets/images/phoneL.png'
 import line2 from '../../assets/images/line_app.svg'
 
 const DownloadApp = () => {
     return(
-        <div className="relative mt-48 mb-36 bg-white lg:mt-10 z-0 lg:mb-72"> 
-
-            <div className="absolute -top-96">
-                <Image src={phone} alt="phone"/>
+        <div className="relative mt-48 mb-36  bg-white lg:mt-10 z-0 lg:mb-72 xl:mt-0 xl:mb-52"> 
+            <div className="flex flex-row justify-center md:mb-36">
+                <div className="absolute self-center -top-96 md:hidden">
+                    <Image src={phone} alt="phone"/>
+                </div>
+                <div className="hidden absolute self-center -top-96 md:flex xl:hidden ">
+                    <Image src={phoneM} alt="phone" width={650} height={700}/>
+                </div>
+                <div className="hidden absolute self-center -top-32 -left-24 xl:flex ">
+                    <Image src={phoneL} alt="phone" width={1198} height={1031}/>
+                </div>
             </div>
-            
             <div>
                 <div className="lg:flex lg:flex-col lg:items-end">
-                    <div className="lg:w-8/12">
+                    <div className="lg:w-8/12 xl:w-6/12 xl:relative xl:-top-24">
                             <div className=" flex flex-col font-druk-bold text-3xl text-center mb-20 lg:mb-12">
                                 <Slide right >
                                     <p className=" mb-2 mt-10 ">Obten más beneficios</p>

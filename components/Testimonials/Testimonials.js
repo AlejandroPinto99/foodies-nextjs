@@ -13,21 +13,25 @@ const Testimonials = () => {
     const CarouselUI = ({position, handleClick, children}) => (
         <div className="overflow-hidden relative">
             {children}
-        <div className="mt-52">
+        <div className="mt-52 md:mb-20">
             <div className="text-center py-5 flex flex-row items-center justify-center z-20">
                 <div onClick={handleClick} data-position={position - 1} className="z-10 ">
 
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 xl:h-16 xl:w-10 text-sm mx-2" fill="none" viewBox="0 0 24 24" 
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 xl:h-16 xl:w-10 text-sm mx-2 md:mt-12" fill="none" viewBox="0 0 24 24" 
                     stroke='#FFD600'>
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>
                 </div>
 
-                    <p className="font-syne-bold text-gray-500 md:text-2xl xl:text-2xl"> {position + 1} / {testimonials.length}</p>
+                    <p className="font-syne-bold text-gray-500 
+                    md:text-2xl md:mt-12
+                    xl:text-2xl"> 
+                        {position + 1} / {testimonials.length}
+                    </p>
 
                     <div onClick={handleClick} data-position={position + 1} className=" z-10 ">
                         {
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 xl:h-16 xl:w-10 text-sm mx-2" fill="none" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 xl:h-16 xl:w-10 text-sm mx-2 md:mt-12" fill="none" viewBox="0 0 24 24"
                                 stroke='#FFD600'
                                 >
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />      
@@ -66,7 +70,7 @@ const Testimonials = () => {
 ]
 
     return(
-        <div className="relative xl:mt-72 md:mt-48 mb-10">
+        <div className="relative md:mt-48 lg:mt-12 xl:mt-12">
             <div className="relative hidden md:flex">
                 <div  className="absolute right-0 z-0">
                     <Image src={image} alt="red_back"/>
@@ -82,55 +86,70 @@ const Testimonials = () => {
             <Carousel>
                 <Slide right>
                     <div className="flex flex-col items-center">
-                        <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-52 md:mb-8  xl:text-4xl">
+                        <p className="font-druk-bold text-xl mt-4 mb-3 px-5 text-center 
+                        md:mx-52 md:mb-8 md:text-3xl
+                        xl:text-4xl">
                             {testimonials[0].tittle}
                         </p>
-                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 
-                        xl:text-2xl xl:w-6/12 flex flex-row justify-center">
+                        <p className="text-gray-400 text-center px-2 leading-5 text-md flex flex-row justify-center
+                        md:mx-20 md:mb-24 
+                        xl:text-2xl xl:w-6/12 ">
                             {testimonials[0].testimony}
                         </p>
                     </div>
                 </Slide>
                 <Slide right>
                     <div className="flex flex-col items-center">
-                        <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-52 md:mb-8  xl:text-4xl ">
+                        <p className="font-druk-bold text-xl mt-12 mb-3 px-5 text-center 
+                        md:text-3xl md:mx-52 md:mb-8 
+                        xl:text-4xl ">
                             {testimonials[1].tittle}
                         </p>
-                        <p className="text-gray-400 text-center px-2 leading-5 text-md  md:mx-20 md:mb-24 
-                        xl:w-6/12 xl:text-2xl flex flex-row justify-center">
+                        <p className="text-gray-400 text-center px-2 leading-5 text-md flex flex-row justify-center 
+                        md:mx-20 md:mb-24 
+                        xl:w-6/12 xl:text-2xl ">
                             {testimonials[1].testimony}
                         </p>
                     </div>
                 </Slide>
                 <Slide right>
                     <div className="flex flex-col items-center"> 
-                        <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-52 md:mb-8  xl:text-4xl">
+                        <p className="font-druk-bold text-xl mt-12 mb-3 px-5 text-center 
+                        md:text-2xl md:mx-52 md:mb-8
+                        xl:text-4xl">
                             {testimonials[2].tittle}
                         </p>
-                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl 
-                        xl:w-6/12 flex flex-row justify-center">
+                        <p className="text-gray-400 text-center px-2 leading-5 text-md flex flex-row justify-center
+                        md:mx-20 md:mb-24 xl:text-2xl 
+                        xl:w-6/12 ">
                             {testimonials[2].testimony}
                         </p>
                     </div>
                 </Slide>
                 <Slide right>
                     <div className="flex flex-col items-center">
-                        <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-+++52 md:mb-8  xl:text-4xl ">
+                        <p className="font-druk-bold text-xl mt-12 mb-3 px-5 text-center
+                        md:text-2xl md:mx-52 md:mb-8
+                        xl:text-4xl ">
                             {testimonials[3].tittle}
                         </p>
-                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl 
-                        xl:w-6/12 flex flex-row justify-center">
+                        <p className="text-gray-400 text-center px-2 leading-5 text-md flex flex-row justify-center
+                        md:mx-20 md:mb-24 xl:text-2xl 
+                        xl:w-6/12 ">
                             {testimonials[3].testimony}
                         </p>
                     </div>
                 </Slide>
                 <Slide right>
                     <div className="flex flex-col items-center">
-                        <p className= "font-druk-bold text-xl mt-12 mb-3 px-5 text-center md:text-2xl md:mx-+++52 md:mb-8  xl:text-4xl">
+                        <p className="font-druk-bold text-xl mt-12 mb-3 px-5 text-center
+                        md:text-2xl md:mx-52 md:mb-8
+                        xl:text-4xl">
                             {testimonials[4].tittle}
                         </p>
-                        <p className="text-gray-400 text-center px-2 leading-5 text-md md:mx-20 md:mb-24 xl:text-2xl 
-                        xl:w-6/12 flex flex-row justify-center">
+                        <p className="text-gray-400 text-center px-2 leading-5 text-md flex-row justify-center
+                        md:mx-20 md:mb-24 xl:text-2xl 
+                        xl:w-6/12 flex ">
                             {testimonials[4].testimony}
                         </p>
                     </div>

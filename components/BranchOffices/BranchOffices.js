@@ -69,8 +69,8 @@ const BranchOffices = () => {
             </div>
 
             <div className="flex flex-row justify-center border border-gray-300 lg:w-6/12">
-                <button className={`flex flex-row justify-center w-6/12 font-syne-bold 
-                    border border-black text-sm py-3 sm:py-6 md:py-8 md:text-2xl lg:py-5 
+                <button className={`flex flex-row justify-center items-center w-6/12 font-syne-bold 
+                    border border-black text-sm py-3 sm:py-6 md:py-4 md:text-2xl lg:py-5 
                     ${(type === `takeaway`) ? 'text-white bg-black':
                     'text-black bg-white'}`}
                     onClick={() => changeType('takeaway')}>
@@ -83,7 +83,7 @@ const BranchOffices = () => {
                 </button>
 
                 <button className={`flex flex-row justify-center items-center 
-                    w-6/12 font-syne-bold text-sm py-2 md:text-2xl ${(type === `delivery`) ? 'text-white bg-black':
+                    w-6/12 font-syne-bold text-sm py-2 md:py-4 md:text-2xl ${(type === `delivery`) ? 'text-white bg-black':
                     'text-black bg-white'}`}
                     onClick={() => changeType('delivery')}>
 
@@ -95,16 +95,17 @@ const BranchOffices = () => {
                 </button>
             </div>
 
-            <div className="flex flex-row-reverse justify-end items-center border border-gray-300 md:w-6/12 ">
+            <div className="flex flex-row-reverse justify-end items-center border border-gray-300 
+            md:w-full md:pl-20 lg:w-6/12">
                 <input placeholder="Buscar nombre o dirección"
                     className="relative py-3 pl-1 w-5/6 text-md "
                     value={search}
                     onChange={e => setSearch(e.target.value)}
                 />
-                <BsSearch className="text-2xl pl-2 w-10"/>
+                <BsSearch className="text-2xl pl-2 w-10 md:mr-5"/>
             </div>
 
-            <div className="lg:ml-10">
+            <div className=" lg:ml-10 ">
                 <OfficesList offices={officeList} found={found}/>
             </div>
         </div>

@@ -28,7 +28,7 @@ const Footer = () => {
                 <Image src={line} alt="line"
                     className="w-10/12"/>
             </div>
-            <div className="hidden md:flex xl:hidden flex-col justify-center items-center">
+            <div className="hidden md:flex md:ml-20 xl:hidden flex-col justify-center items-center">
                 <Image src={lineM} alt="line"
                     className="w-11/12"/>
             </div>

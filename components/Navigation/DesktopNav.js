@@ -3,7 +3,7 @@ import Link from 'next/link'
 const Desktop = ({color}) => {
     return(
         <nav>
-            <ul className={`flex flex-row justify-start text-${color} mt-10`}>
+            <ul className={`flex flex-row justify-start text-${color}`}>
                     <li className="lg:mx-5 scroll_to font-syne-bold text-lg links lg:text-xl ">
                         <Link href="/#acerca_de">Acerca de</Link> 
                     </li>
