@@ -1,0 +1,17 @@
+
+.link:after {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #3392FF;
+    content: "";
+    transform: scale(0);
+    transition: transform .3s cubic-bezier(0.11, 0.9, 0, 1);
+}
+
+.link:hover:after {
+    transform: scale(1);
+}

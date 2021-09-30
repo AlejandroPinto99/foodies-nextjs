@@ -17,7 +17,7 @@ const Testimonials = () => {
             <div className="text-center py-5 flex flex-row items-center justify-center z-20">
                 <div onClick={handleClick} data-position={position - 1} className="z-10 ">
 
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 xl:h-16 xl:w-10 text-sm mx-2 md:mt-12" fill="none" viewBox="0 0 24 24" 
+                <svg xmlns="http://www.w3.org/2000/svg" className="cursor-pointer h-6 w-6 xl:h-16 xl:w-10 text-sm mx-2 md:mt-12" fill="none" viewBox="0 0 24 24" 
                     stroke='#FFD600'>
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>
@@ -31,7 +31,7 @@ const Testimonials = () => {
 
                     <div onClick={handleClick} data-position={position + 1} className=" z-10 ">
                         {
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 xl:h-16 xl:w-10 text-sm mx-2 md:mt-12" fill="none" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" className="cursor-pointer h-6 w-6 xl:h-16 xl:w-10 text-sm mx-2 md:mt-12" fill="none" viewBox="0 0 24 24"
                                 stroke='#FFD600'
                                 >
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />      

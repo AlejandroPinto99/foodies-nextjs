@@ -27,13 +27,16 @@ const QuienesSomos = () => {
                             </p>
                         </Slide>
                     </div>
-                
-                    <div className="flex flex-row justify-start items-center font-syne-bold mt-6
-                    md:mt-12 2xl:text-5xl
-                    xl:mt-0"> 
-                        <h3 className="md:text-2xl">Contáctanos</h3>
-                        <AiOutlineArrowRight className="w-10 ml-2 "/>
-                    </div>
+                    <Link href="/#contact" >
+                        <div className="transform hover:scale-110 transition duration-300 w-max cursor-pointer">
+                            <div className=" flex flex-row justify-start items-center font-syne-bold mt-6
+                            md:mt-12 2xl:text-5xl 
+                            xl:mt-0"> 
+                                <h3 className="md:text-2xl">Contáctanos</h3>
+                                <AiOutlineArrowRight className="w-7 ml-2"/>
+                            </div>
+                        </div> 
+                    </Link>
                 </div>
             </div>
         </div>

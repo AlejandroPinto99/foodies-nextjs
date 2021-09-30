@@ -68,10 +68,14 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-row justify-start items-center md:mt-10 ">
-                    <p className="ml-4 px-2 font-syne-bold text-lg md:text-2xl md:mr-1 2xl:text-4xl">Encuentranos</p>
-                <Link href="#restaurantes"><a><AiOutlineArrowRight className="md:text-2xl xl:text-4xl"/></a></Link>
-                </div>
+                <Link href="#restaurantes">
+                    <div className="transform hover:scale-110 transition duration-300 w-max cursor-pointer">
+                        <div className="ml-4 flex flex-row justify-start items-center md:mt-10 relative">
+                            <p className="pr-2 font-syne-bold text-lg md:text-2xl md:mr-1 2xl:text-4xl">Encuentranos</p>
+                            <AiOutlineArrowRight className="md:text-2xl xl:text-4x"/>
+                        </div>
+                    </div>
+                </Link>
             </div>
         </div>
     )

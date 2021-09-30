@@ -27,7 +27,7 @@ const OfficeList = ({offices, found}) => {
                             styleRule={`my-3 mx-3 pt-3 pb-4 pl-2 pr-4 ${!(selected === office.id) ? 'border border-black rounded-md big-white' : 
                             'border border-transparent bg-yellow-200'} transition duration-500 ease-in-out hover:border-yellow-100 
                             hover:bg-yellow-100 transform hover:-translate-y-1 hover:scale-100 
-                            md:mx-20 lg:mx-0 lg:ml-10 xl:mr-0`}
+                            md:mx-20 lg:mx-0 lg:ml-10 xl:mr-0 cursor-pointer`}
                             onClick={() => setSelected(office.id)}
                             key={key}
                             name={office.name}
