@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="flex flex-col items-center justify-center md:flex-row md:justify-between md:mx-10">
                 <p className="font-druk-bold text-2xl text-gray-500 lg:ml-10"> Foodies </p>
                 <div className="flex flex-row justify-center my-3">
-                    <div className="mx-1 xl:mr-32">
+                    <div className="mx-1 xl:mr-36">
                         <Image src={apple} alt="apple logo"  />
                     </div>
                     <div className="mx-1">
