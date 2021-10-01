@@ -9,7 +9,7 @@ const MobileNav = () => {
     return(
         <div>
             <nav className="flex flex-row-reverse">  
-            <GiHamburgerMenu size="30px"
+            <GiHamburgerMenu size="30px" className="cursor-pointer"
             onClick={()=> setNav(true)}/>        
                 {
                 nav ? (

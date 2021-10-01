@@ -15,7 +15,7 @@ const Home = () => {
     return(
         <div className="md:mb-32 xl:mb-72">
 
-            <div className="  md:hidden absolute right-0 z-0 -top-5">
+            <div className="md:hidden absolute right-0 z-0 -top-5">
                 <Image src={Subtract} alt="BgImage" width={330} height={420}/>
             </div>
 

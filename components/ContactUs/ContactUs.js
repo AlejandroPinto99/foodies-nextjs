@@ -21,26 +21,28 @@ const ContactUs = () => {
             "message": message
         }
 
-        try{
-            const response = await fetch("https://api.elaniin.dev/api/contact", {
-                method: "POST",
-                body: JSON.stringify(jsonObject),
-                headers: {
-                    "Content-type": "application/json; charset=UTF-8"
+        if(jsonObject.name === "" || jsonObject.email === "" || jsonObject.message === "" ){
+            alert("Por favor, llenen todos los campos")
+        } else {
+            try{
+                const response = await fetch("https://api.elaniin.dev/api/contact", {
+                    method: "POST",
+                    body: JSON.stringify(jsonObject),
+                    headers: {
+                        "Content-type": "application/json; charset=UTF-8"
+                        }
                     }
-                }
-            );
-            
-
-        const json = await response.json();
-
-        console.log(json);
-
-        setSended(!sended)
-
-        } catch (e){
-            console.log(e);
-            alert("Something went wrong")
+                );
+                
+    
+            const json = await response.json();
+    
+            setSended(!sended)
+    
+            } catch (e){
+                console.log(e);
+                alert("Something went wrong")
+            }
         }
     }
 

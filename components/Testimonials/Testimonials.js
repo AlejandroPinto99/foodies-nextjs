@@ -70,7 +70,7 @@ const Testimonials = () => {
 ]
 
     return(
-        <div className="relative md:mt-48 lg:mt-12 xl:mt-12">
+        <div id="testimonials" className="relative md:mt-48 lg:mt-12 xl:mt-12">
             <div className="relative hidden md:flex">
                 <div  className="absolute right-0 z-0">
                     <Image src={image} alt="red_back"/>

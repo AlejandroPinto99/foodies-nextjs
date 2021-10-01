@@ -109,7 +109,7 @@ const Search = () => {
         <div className={`absolute top-0 w-full h-96 bg-black z-20 rounded-b-xl ${filter ? 'flex-col' : 'hidden'}`}>
             <div className="mt-5 flex flex-row items-center justify-between ">
                 <p className="text-yellow-400 text-4xl ml-4 font-druk-bold">Filtros</p>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 mr-5" fill="none" viewBox="0 0 24 24" stroke="white"
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 mr-5 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="white"
                     onClick={() => setFilter(!filter)}
                 >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -130,20 +130,20 @@ const Search = () => {
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                         />
-                        <BsSearch className="text-2xl w-1/6"/>
+                        <BsSearch className="text-2xl w-1/6 cursor-pointer"/>
                     </div> 
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 ml-3 p-1  md:hidden" viewBox="0 0 20 20" fill="currentColor"
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 ml-3 p-1 md:hidden cursor-pointer" viewBox="0 0 20 20" fill="currentColor"
                     onClick={() => setFilter(!filter)}
                     >
                     <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z" />
                 </svg> 
                 <div className="xl:w-8/12 xl:my-10">
                     <ul className="hidden md:flex flex-row justify-between mx-5 my-2 font-druk-bold text-sm lg:text-xl xl:text-sm xl:justify-start">
-                        <li className="mx-5" onClick={() => requestAll()}>Todos</li>
-                        <li className="mx-5" onClick={() => requestCategory(1)}>Las Tradicionales</li>
-                        <li className="mx-5" onClick={() => requestCategory(2)}>Recomendaciones</li>
-                        <li className="mx-5" onClick={() => requestCategory(3)}>Para compartir</li>
+                        <li className="mx-5 link cursor-pointer" onClick={() => requestAll()}>Todos</li>
+                        <li className="mx-5 link cursor-pointer" onClick={() => requestCategory(1)}>Las Tradicionales</li>
+                        <li className="mx-5 link cursor-pointer" onClick={() => requestCategory(2)}>Recomendaciones</li>
+                        <li className="mx-5 link cursor-pointer" onClick={() => requestCategory(3)}>Para compartir</li>
                     </ul>
                 </div>
     

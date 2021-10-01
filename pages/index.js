@@ -11,7 +11,7 @@ const Landpage = () => {
     return(
         <div className="absolute z-10">
             <Home />
-            <div className="xl:flex xl:flex-row z-10">
+            <div className="xl:flex xl:flex-row z-10 xl:mb-5">
                 <BigHero className="xl:w-6/12"/>
                 <QuienesSomos className="xl:w-6/12" id="acerca_de" />
             </div>
